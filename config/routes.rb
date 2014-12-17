@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'equations/index'
+
+  get 'equations/show'
+
+  get 'equations/new'
+
+  get 'equations/create'
+
+  root 'equations#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
