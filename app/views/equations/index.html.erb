@@ -1,2 +1,5 @@
-<h1>Equations#index</h1>
-<p>Find me in app/views/equations/index.html.erb</p>
+<h1>List of Available Topics</h1>
+<ul>
+	<%=render @equations %>
+</ul>
+<%= link_to "Add Topic", addEquation_path%>

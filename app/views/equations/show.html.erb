@@ -1,2 +1,29 @@
-<h1>Equations#show</h1>
-<p>Find me in app/views/equations/show.html.erb</p>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= @equation.name %>
+      </h1>
+      <h3>
+        Description
+      </h3>
+      <p>
+      	<%= @equation.desc %>
+      </p>
+      <h3>
+        Example
+      </h3>
+      <p>
+        <%= @equation.equation%>
+      </p>
+      <p>
+        Mouse over the Answer to see the answer.
+      </p>
+      <h3 title="<%= @equation.answer%>">
+        Answer
+      </h3>
+
+    </section>
+  </aside>
+  <%= link_to "Back", root_url%>
+</div>

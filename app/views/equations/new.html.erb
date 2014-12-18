@@ -1,2 +1,27 @@
-<h1>Equations#new</h1>
-<p>Find me in app/views/equations/new.html.erb</p>
+<h1>Add Topic</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@equation) do |f| %>
+      <%= render 'shared/error_messages' %>
+      <p>
+      <%= f.label :name %>
+      </p><p>
+      <%= f.text_field :name, class: 'form-control smallTF'%>
+      </p><p>
+      <%= f.label :desc %>
+      </p><p>
+      <%= f.text_area :desc, class: 'form-control largeTF', :size => "150x150"%>
+      </p><p>
+      <%= f.label :equation %>
+      </p><p>
+      <%= f.text_area :equation, class: 'form-control largeTF', :size => "150x150"%>
+      </p><p>
+      <%= f.label :answer %>
+      </p><p>
+      <%= f.text_area :answer, class: 'form-control largeTF', :size => "150x150"%>
+      </p><p>
+      <%= f.submit "Add My Topic", class: "btn btn-primary" %>
+      </p>
+    <% end %>
+  </div>
+</div>

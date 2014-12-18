@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
-  get 'equations/index'
+  
 
-  get 'equations/show'
+  get 'info' => 'equations/show'
 
-  get 'equations/new'
+  get 'addEquation' => 'equations#new'
 
-  get 'equations/create'
+  post 'addEquation' => 'equations/create'
 
   root 'equations#index'
+
+  resources :equations
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
