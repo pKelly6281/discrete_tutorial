@@ -15,12 +15,7 @@
  *= require_tree .
  *= require_self
  */
- div
- {
- 	text-align: center;
- 	margin-right: auto;
- 	margin-left: auto;
- }
+
  body
  {
  	text-align:center;
